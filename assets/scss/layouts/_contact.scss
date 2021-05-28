@@ -1,0 +1,36 @@
+.contact {
+	max-width: 360px;
+	max-height: 700px;
+	padding: 2.5em 1em 5em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	
+	@include media-breakpoint-min(medium) {
+		text-align: left;
+	}
+
+	& .section-title, & .btn {
+		display: block;
+		width: 100%;
+	}
+
+	& .section-title {
+		margin-bottom: 0;
+		
+		@include media-breakpoint-between(xsmall, medium) {
+			display: inline-block;
+			width: auto;
+		}
+	}
+
+	@include media-breakpoint-min(medium) {
+		padding: 5em 0;
+		max-width: 540px;
+		max-height: 750px;
+	}
+
+	&-text {
+		color: var(--white);
+	}
+}

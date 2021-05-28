@@ -1,0 +1,17 @@
+.comment {
+	text-align: center;
+	padding: 2.5em 1em;
+	
+	@include media-breakpoint-min(large) {
+		padding: 12.5em 14.5625em;
+	}
+
+	&-text {
+		font: var(--h5-font);
+		font-weight: normal;
+	}
+
+	& [class^="icon-"] {
+		margin-top: 1rem;
+	}
+}

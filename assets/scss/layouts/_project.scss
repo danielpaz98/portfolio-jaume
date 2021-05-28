@@ -1,0 +1,49 @@
+.project {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+
+	&-img, &-info {
+		flex: 1;
+	}
+
+	&-img {
+		display: flex;
+		justify-content: center;
+
+		picture {
+			max-width: 90%;
+	
+			@include media-breakpoint-max(500px) {
+				max-width: 100%;
+			}
+
+			@include media-breakpoint-between(500px, large) {
+				max-width: 80%;
+			}
+		}
+	}
+
+	&:nth-child(4n + 1) &-img {
+		@include media-breakpoint-min(large) {
+			order: 2;
+		}
+	}
+
+	@include media-breakpoint-min(large) {
+		text-align: left;
+		flex-direction: row;
+	}
+
+	& .btn {
+		@include media-breakpoint-min(small) {
+			display: inline-block;
+		}
+	}
+}
+
+.project-testimony {
+	display: flex;
+	justify-content: center;
+}
