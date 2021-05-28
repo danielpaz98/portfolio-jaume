@@ -1,0 +1,41 @@
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--white);
+
+	@include media-breakpoint-min(large) {
+		& .logo {
+			display: inline-block;
+		}
+	}
+}
+
+.footer-info {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.footer-info-copy {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: .25rem;
+	text-align: center;
+
+	@include media-breakpoint-max(940px) {
+		flex-basis: 100%;
+		order: 2;
+	}
+
+	&-text {
+		display: flex;
+
+		[class^="icon-"] {
+			margin: 0 .25rem;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	gap        : 8rem;
+	align-items: center;
+
+	@include media-breakpoint-min(large) {
+		justify-content: flex-start;
+	}
+
+	& .btn {
+		@include media-breakpoint-max(large) {
+			display: inline-block;
+		}
+	}
+}

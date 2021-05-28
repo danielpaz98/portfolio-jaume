@@ -1,0 +1,21 @@
+.menu {
+	display       : flex;
+	gap           : 1rem;
+	font          : var(--button-font);
+	letter-spacing: var(--button-letter-spacing);
+	text-transform: uppercase;
+	
+	&-item {
+		list-style: none;
+	}
+
+	&-item.active a {
+		color: var(--purple);
+	}
+}
+
+#nav-menu {
+	@include media-breakpoint-max(large) {
+		display: none;
+	}
+}
