@@ -1,0 +1,73 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+::selection {
+  background-color: var(--violet);
+  color           : var(--white);
+  text-shadow     : none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	font            : var(--body-font);
+	letter-spacing  : var(--body-letter-spacing);
+	background-image: var(--radial-body-bg);
+	color           : var(--purple);
+	min-height      : 100vh;
+}
+
+img {
+  max-width: 100%;
+  height   : auto;
+}
+
+a {
+  text-decoration: none;
+  color          : var(--white);
+}
+
+textarea {
+	resize: none;
+}
+
+ul {
+	padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top   : 0;
+  margin-bottom: 0;
+  font-family  : var(--font-base);
+  color        : var(--purple);
+}
+
+h1 {
+	font          : var(--h1-font);
+	letter-spacing: var(--h1-letter-spacing);
+}
+
+h2 {
+	font          : var(--h2-font);
+	letter-spacing: var(--h2-letter-spacing);
+}
+
+h3 {
+	font: var(--h3-font);
+}
+
+h4 {
+	font: var(--h4-font);
+}
+
+h5 {
+	font: var(--h5-font);
+}
