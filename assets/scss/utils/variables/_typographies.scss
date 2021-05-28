@@ -1,0 +1,31 @@
+:root {
+	//TYPOGRAPHIES
+	--font-base: "Poppins", sans-serif;
+
+	// FONT SIZES
+  --base-font-size: 16px;
+  --h1-size       : bold 5.9375rem / 9.625rem;
+  --h2-size       : bold 3.6875rem / 6rem;
+  --h3-size       : bold 3rem / 4.875rem;
+  --h4-size       : bold 2.125rem / 3.4375rem;
+  --h5-size       : bold 1.5rem / 2.4375rem;
+  --body-size     : var(--base-font-size) / 1.625rem;
+  --button-size   : bold .875rem / 1.415625rem;
+  --small-size    : .75rem / 1.1875rem;
+
+	// FONTS
+	--body-font  : var(--body-size) var(--font-base);
+	--button-font: var(--button-size) var(--font-base);
+	--small-font : var(--small-size) var(--font-base);
+	--h1-font    : var(--h1-size) var(--font-base);
+	--h2-font    : var(--h2-size) var(--font-base);
+	--h3-font    : var(--h3-size) var(--font-base);
+	--h4-font    : var(--h4-size) var(--font-base);
+	--h5-font    : var(--h5-size) var(--font-base);
+	
+	// LETTER SPACING
+	--body-letter-spacing   : .005rem;
+	--button-letter-spacing: .078125rem;
+	--h1-letter-spacing     : -0.015rem;
+	--h2-letter-spacing     : -.005rem;
+}

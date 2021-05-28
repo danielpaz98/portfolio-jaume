@@ -1,0 +1,13 @@
+html {
+  & .d-none {
+    display: none;
+  }
+
+  & .d-block {
+    display: block;
+  }
+
+  & .d-inline-block {
+    display: inline-block;
+  }
+}
